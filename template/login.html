@@ -1,0 +1,23 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="background-image: url('{% static 'imajes.jpg' %}');background-repeat: no-repeat;background-size: cover;">
+
+
+<div class="card-body" style="width: 30%; margin-left: 35%; margin-top: 20%;">
+    <form action="" method="post" style="background-color: white;padding: 25px;border: 1px solid black; ">
+        <h3 >Login: </h3>
+        {% csrf_token %}
+        {{ form.as_p}}
+
+        <input type="Submit" value="Submit" style="margin-left: 16%; margin-top: 2%">
+    </form>
+</div>
+
+</body>
+</html>

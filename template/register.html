@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="card-body">
+    <form method="post" style="margin-top: 15%;margin-left: 32%; background-color: LightGray; margin-right: 35%; padding: 40px;box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);" >
+        {% csrf_token %}
+        <h3 >Register:  </h3>
+        <label for="username">{{form.username.label}}</label>
+        {{form.username}}
+        <label for="password1">{{form.password1.label}}</label>
+        {{form.password1}}
+        <br>
+        <br>
+        <label for="password2" >{{form.password2.label}}</label>
+        {{form.password2}}
+        <br>
+        <br>
+        <br>
+
+        <input type="submit" value="Register" style="margin-left:10%">
+    </form>
+
+</div>
+</body>
+</html>

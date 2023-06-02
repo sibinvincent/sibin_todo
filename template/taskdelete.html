@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<div class="card-body">
+  <form action="" method="post">
+    {% csrf_token %}
+    <p> Are you sure you want to delete "{{task}}"?</p>
+      <input type="submit" value="delete">
+
+
+  </form>
+
+
+</div>
+
+
+<div style="margin-top: 2%;">
+
+<a href="{% url 'task'%}" > Cancel</a>
+
+</div>
+
+</body>
+</html>
